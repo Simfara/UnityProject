@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Plane
   - TriggerZone
+  - Score
   layers:
   - Default
   - TransparentFX

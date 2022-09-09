@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Challenge1 
+ * Script to make the plane object move forward, 
+ * and tilt the plane on userInput.
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

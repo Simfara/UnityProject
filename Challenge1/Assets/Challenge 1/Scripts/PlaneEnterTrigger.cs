@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Challenge1 
+ * Script to increment score when plane enters a triggerzone.
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

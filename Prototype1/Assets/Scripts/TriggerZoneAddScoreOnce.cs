@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype1 
+ * Script to increment score when the player enters the trigger zone!
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype1 
+ * Script to show the score, keep track of win and lose
+ * and replay the game if the player wishes.
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

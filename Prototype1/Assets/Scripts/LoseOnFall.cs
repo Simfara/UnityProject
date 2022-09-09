@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype1 
+ * Script to make the player lose if they fall of the road.
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Challenge1 
+ * Script that contins the losing condition of the game.
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -34,7 +34,7 @@ public class SpawnManager : MonoBehaviour
     {
         //add a 3 sec delay before spawn objects
 
-        yield return new WaitForSeconds(3f);
+        //yield return new WaitForSeconds(3f);
 
         while (!healthSystem.gameOver)
         {

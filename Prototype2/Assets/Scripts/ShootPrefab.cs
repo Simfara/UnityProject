@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype2 
+ * This script Makes the player shoot the food object when they enter "space"
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

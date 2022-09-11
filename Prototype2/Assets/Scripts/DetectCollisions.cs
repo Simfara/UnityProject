@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype2 
+ * This script Destroys the animal object,  when the food object collides with it.
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

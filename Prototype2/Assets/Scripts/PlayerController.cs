@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype2 
+ * This script allows the player to move left and right!
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

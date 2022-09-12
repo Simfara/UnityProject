@@ -1,4 +1,9 @@
-﻿//This script is based on https://www.youtube.com/watch?v=3uyolYVsiWc
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Challenge2
+ */
+//This script is based on https://www.youtube.com/watch?v=3uyolYVsiWc
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,40 +38,44 @@ public class HealthSystem : MonoBehaviour
             health = maxHealth;
         }
 
-        while (!gameOver)
+      
+        for (int i = 0; i < hearts.Count; i++)
         {
-            for (int i = 0; i < hearts.Count; i++)
+            //Display full or empty heart sprite based on current health
+            if (i < health)
             {
-                //Display full or empty heart sprite based on current health
-                if (i < health)
-                {
-                    hearts[i].sprite = fullHeart;
-                }
-                else
-                {
-                    hearts[i].sprite = emptyHeart;
-                }
-
-                //Show the number of hearts equal to current max health
-                if (i < maxHealth)
-                {
-                    hearts[i].enabled = true;
-                }
-                else
-                {
-                    hearts[i].enabled = false;
-                }
+                hearts[i].sprite = fullHeart;
+            }
+            else
+            {
+                hearts[i].sprite = emptyHeart;
             }
 
+            //Show the number of hearts equal to current max health
+            if (i < maxHealth)
+            {
+                hearts[i].enabled = true;
+            }
+            else
+            {
+                hearts[i].enabled = false;
+            }
         }
 
-        if (displayScoreScript.won)
+        //win condition
+        if(displayScoreScript.score >=5)
         {
             gameOver = true;
             youWinText.SetActive(true);
         }
 
-        else if (health <= 0)
+        /*if (displayScoreScript.won)
+        {
+            gameOver = true;
+            youWinText.SetActive(true);
+        }*/
+
+         if (health <= 0)
         {
             gameOver = true;
             gameOverText.SetActive(true);

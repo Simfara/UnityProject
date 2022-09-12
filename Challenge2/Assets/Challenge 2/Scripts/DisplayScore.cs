@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Challenge2
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,12 +31,9 @@ public class DisplayScore : MonoBehaviour
     {
         textbox.text = "Score: " + score;
 
-        if(score > 1)
+        if(score >=5)
         {
-           
-            textbox.text = "You WIN!\nPress R to Restart!";
             won = true;
-            healthSystemScript.gameOver = true;
 
         }
     }

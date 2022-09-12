@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Challenge2
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

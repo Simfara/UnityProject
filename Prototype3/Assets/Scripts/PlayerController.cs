@@ -24,7 +24,11 @@ public class PlayerController : MonoBehaviour
         forceMode = ForceMode.Impulse;
 
         //Modify gravity
-        Physics.gravity *= gravityModifier;
+        if(Physics.gravity.y > -10)
+        {
+            Physics.gravity *= gravityModifier;
+        }
+
     }
 
     // Update is called once per frame

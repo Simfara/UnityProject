@@ -20,8 +20,7 @@ public class MoveLeft : MonoBehaviour
         {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
-        transform.Translate(Vector3.left * Time.deltaTime * speed);
-
+       
         //destroy obstacles out of bounds off screen to the left
         if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
         {

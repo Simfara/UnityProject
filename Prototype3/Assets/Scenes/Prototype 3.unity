@@ -212,6 +212,7 @@ MonoBehaviour:
   forceMode: 1
   isOnGround: 1
   gameOver: 0
+  playerAnimator: {fileID: 0}
 --- !u!65 &74568224
 BoxCollider:
   m_ObjectHideFlags: 0

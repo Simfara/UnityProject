@@ -24,6 +24,7 @@ public class UIManager : MonoBehaviour
         {
             playerControllerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         }
+
         scoreText.text = "Score: 0";
     }
 
@@ -42,21 +43,23 @@ public class UIManager : MonoBehaviour
         {
             scoreText.text = " You Lose!\nPress R to try again!";
         }
+
+        //win condition
         if (score >= 10)
         {
             playerControllerScript.gameOver = true;
             won = true;
 
-            //stop player running
-           // playerControllerScript.StopRunning();
+        //stop player running
+        // playerControllerScript.StopRunning();
 
             scoreText.text = "You Win!\nPress R to play again";
+        }
 
-            //Press R to restart if game over
-            if(playerControllerScript.gameOver && Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            }
+        //Press R to restart if game over
+        if (playerControllerScript.gameOver && Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

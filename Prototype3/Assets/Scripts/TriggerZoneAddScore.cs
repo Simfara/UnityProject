@@ -15,7 +15,7 @@ public class TriggerZoneAddScore : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player" ) && !triggered)
+        if (other.CompareTag("Player") && !triggered)
         {
             triggered = true;
             uiManager.score++;

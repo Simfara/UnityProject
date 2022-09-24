@@ -9,23 +9,23 @@ public class MoveLeft : MonoBehaviour
 
     private PlayerController playerControllerScript;
 
-    private void Start()
+    void Start()
     {
         playerControllerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
     // Update is called once per frame
     void Update()
     {
-        if(playerControllerScript.gameOver == false)
-        {
+       if(playerControllerScript.gameOver == false)
+       {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
-        }
+       }
        
         //destroy obstacles out of bounds off screen to the left
-        if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
-        {
+       if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
+       {
             Destroy(gameObject);
 
-        }
+       }
     }
 }

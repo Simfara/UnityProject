@@ -11,6 +11,7 @@ public class SpawnManager : MonoBehaviour
     private float repeatRate = 2;
 
     private PlayerController playerControllerScript;
+
     // Start is called before the first frame update
     void Start()
     {

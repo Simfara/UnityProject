@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype3 
+ * This script Displays the Score, and the game over/ replay  text
+ * it also determines the win and loss conditions.
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

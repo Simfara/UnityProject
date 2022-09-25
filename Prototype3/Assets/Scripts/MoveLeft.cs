@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype3 
+ * This script moves the obstacle and the background to the left
+ * giving it the effect that the player is running forward
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

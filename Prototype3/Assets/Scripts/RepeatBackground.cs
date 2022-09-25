@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype3 
+ * This script loops the background image
+ * stops looping whne the game is over
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

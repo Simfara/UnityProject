@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype3 
+ * This script increments teh score when the player jumps and avoids the obstacle
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype3 
+ * This script Spawns the obstacles as long as the game is not over
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

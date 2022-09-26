@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype3 
+ * This script loops the background when the game is not over to make it seem that the player is floating forward!
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

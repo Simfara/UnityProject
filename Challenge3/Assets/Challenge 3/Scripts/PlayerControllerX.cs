@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype3 
+ * This script moves the player 
+ * if the player collides with the money the score increment
+ * if the player collides with the bomb it;s game Over
+ * if the player collides with the ground it bounces.
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,8 +15,9 @@ public class PlayerControllerX : MonoBehaviour
 {
     public bool gameOver;
     public bool islowEnough;
+
     private float lowerBound = 2;
-    private float upperBound = 14;
+    private float upperBound = 10;
 
     public float floatForce;
     private float gravityModifier = 1.5f;
@@ -22,6 +32,7 @@ public class PlayerControllerX : MonoBehaviour
     public AudioClip explodeSound;
     public AudioClip bounceSound;
 
+    private ScoreManager scoreManager;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +49,7 @@ public class PlayerControllerX : MonoBehaviour
 
         islowEnough = false;
 
+        scoreManager = GameObject.FindObjectOfType<ScoreManager>();
     }
 
     // Update is called once per frame
@@ -77,9 +89,12 @@ public class PlayerControllerX : MonoBehaviour
         {
             fireworksParticle.Play();
             playerAudio.PlayOneShot(moneySound, 1.0f);
+            scoreManager.score++;
             Destroy(other.gameObject);
+            
 
         }
+        //if player collides with ground, bounce
         else if (other.gameObject.CompareTag("Ground"))
         {
             playerRb.AddForce(Vector3.up * 10, forceMode);

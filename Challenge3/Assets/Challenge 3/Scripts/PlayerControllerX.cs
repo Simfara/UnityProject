@@ -5,10 +5,14 @@ using UnityEngine;
 public class PlayerControllerX : MonoBehaviour
 {
     public bool gameOver;
+    public bool islowEnough;
+    private float lowerBound = 2;
+    private float upperBound = 14;
 
     public float floatForce;
     private float gravityModifier = 1.5f;
     private Rigidbody playerRb;
+    public ForceMode forceMode;
 
     public ParticleSystem explosionParticle;
     public ParticleSystem fireworksParticle;
@@ -16,27 +20,44 @@ public class PlayerControllerX : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip moneySound;
     public AudioClip explodeSound;
+    public AudioClip bounceSound;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        
+        
+        playerRb = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifier;
         playerAudio = GetComponent<AudioSource>();
 
+        forceMode = ForceMode.Impulse;
         // Apply a small upward force at the start of the game
-        playerRb.AddForce(Vector3.up * 5, ForceMode.Impulse);
+        playerRb.AddForce(Vector3.up * 5, forceMode);
+
+        islowEnough = false;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        // While space is pressed and player is low enough, float up
-        if (Input.GetKey(KeyCode.Space) && !gameOver)
+        if(playerRb.transform.position.y >= upperBound)
         {
-            playerRb.AddForce(Vector3.up * floatForce);
+            islowEnough = false;
         }
+        else if(playerRb.transform.position.y >= lowerBound)
+        {
+            islowEnough = true;
+        }
+        // While space is pressed and player is low enough, float up
+        if (Input.GetKeyDown(KeyCode.Space) && islowEnough && !gameOver )
+        {
+            playerRb.AddForce(Vector3.up * floatForce,forceMode);
+
+        }
+       
     }
 
     private void OnCollisionEnter(Collision other)
@@ -58,6 +79,11 @@ public class PlayerControllerX : MonoBehaviour
             playerAudio.PlayOneShot(moneySound, 1.0f);
             Destroy(other.gameObject);
 
+        }
+        else if (other.gameObject.CompareTag("Ground"))
+        {
+            playerRb.AddForce(Vector3.up * 10, forceMode);
+            playerAudio.PlayOneShot(bounceSound, 1.0f);
         }
 
     }

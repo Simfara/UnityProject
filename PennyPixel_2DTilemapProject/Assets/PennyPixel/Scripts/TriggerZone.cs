@@ -11,12 +11,16 @@ using UnityEngine;
 public class TriggerZone : MonoBehaviour
 {
     public bool triggered = false;
+
+   
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("before the if statement");
         if (other.CompareTag("Player") && !triggered)
         {
+            Debug.Log("test");
             triggered = true;
-            
+  
         }
     }
 }

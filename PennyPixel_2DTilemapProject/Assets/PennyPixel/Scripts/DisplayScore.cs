@@ -26,6 +26,7 @@ public class DisplayScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        triggerZoneScript = GameObject.FindGameObjectWithTag("trigger").GetComponent<TriggerZone>();
         gameOver = false;
         won = false;
         //score = 0;
@@ -34,7 +35,7 @@ public class DisplayScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {//If the game is not over, display score
-        score = gemBehaviourScript.gemScore;
+        //score = gemBehaviourScript.gemScore;
         if (!gameOver)
         {
             textbox.text = "Score: " + score;

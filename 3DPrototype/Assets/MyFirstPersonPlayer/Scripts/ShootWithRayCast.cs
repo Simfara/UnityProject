@@ -30,7 +30,7 @@ public class ShootWithRayCast : MonoBehaviour
 
            
 
-            //Get the targetscript off the hit obkect
+            //Get the target script off the hit object
             Target target = hitInfo.transform.gameObject.GetComponent<Target>();
 
             //if target script found make the target take damage

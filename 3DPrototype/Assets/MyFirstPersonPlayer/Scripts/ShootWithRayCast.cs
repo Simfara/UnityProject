@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype5B
+ * Script thats works with RayCast to shoot the target
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

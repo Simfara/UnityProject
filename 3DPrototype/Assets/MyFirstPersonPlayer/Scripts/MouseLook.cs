@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype5B
+ * Script thats locks the cursor and moves the camera smoothly
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

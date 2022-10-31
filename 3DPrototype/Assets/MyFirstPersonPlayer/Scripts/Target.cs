@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype5B
+ * Script thats takes damages to the object and destroys it after 5 hits
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

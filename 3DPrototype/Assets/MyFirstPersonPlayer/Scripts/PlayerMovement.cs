@@ -1,4 +1,9 @@
-﻿ using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype5B
+ * Script thats moves the player
+ */using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

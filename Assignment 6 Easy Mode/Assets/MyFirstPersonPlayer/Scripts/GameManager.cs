@@ -65,7 +65,7 @@ public class GameManager : Singleton<GameManager>
 
         }
     }
-    //pausing and unpasugin
+    //pausing and unpausing
     public  void Pause()
     {
         Time.timeScale = 0f;

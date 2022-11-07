@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Assignment6
+ * Script that consists the behaviour for parent class Enemy
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

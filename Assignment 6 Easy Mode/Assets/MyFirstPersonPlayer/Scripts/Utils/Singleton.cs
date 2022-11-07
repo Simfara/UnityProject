@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Assignment6
+ * Script that consits Singelton generic template
+ */
+using System.Collections;
 using UnityEngine;
 
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>

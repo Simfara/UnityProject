@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Assignment6
+ * Script that explains OOP in Unity
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

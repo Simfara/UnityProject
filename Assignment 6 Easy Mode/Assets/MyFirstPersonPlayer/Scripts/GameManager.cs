@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Assignment6
+ * Script that manages the game Ui elements such as Main menu loading new scenes ,pause funciton etc.
+ */
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

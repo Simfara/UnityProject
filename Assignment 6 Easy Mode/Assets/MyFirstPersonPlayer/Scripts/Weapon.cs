@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Assignment6
+ * Script thats uses polymorphism 
+ */
+using System.Collections;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour

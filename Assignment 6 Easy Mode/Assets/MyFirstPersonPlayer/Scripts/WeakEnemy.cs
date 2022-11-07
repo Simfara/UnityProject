@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Assignment6
+ * Script that consits child class weak enemy
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

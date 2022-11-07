@@ -19,6 +19,7 @@ public class Target : MonoBehaviour
         if(health <=0)
         {
             Die();
+
         }
     }
 

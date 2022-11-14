@@ -42,6 +42,12 @@ public class PlayerControllerX : MonoBehaviour
             trailParticle.Play();
         }
 
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+
+            trailParticle.Stop();
+        }
+
     }
 
     // If Player collides with powerup, activate powerup

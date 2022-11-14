@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject powerUpIndicator;
 
+    public bool loss;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +34,13 @@ public class PlayerController : MonoBehaviour
         //move our powerup Indicator to the gorund below the player
 
         powerUpIndicator.transform.position = transform.position + new Vector3(0, -.05f, 0);
-        
+
+
+        if (transform.position.y < -10)
+        {
+            loss=true;
+        }
+
     }
     private void FixedUpdate()
     {

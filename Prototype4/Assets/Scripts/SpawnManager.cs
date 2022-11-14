@@ -32,7 +32,7 @@ public class SpawnManager : MonoBehaviour
         for (int i = 0; i < powerUpToSpawn; i++)
         {
             //instantiate the enemy in the random position
-            Instantiate(powerupPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
+            Instantiate(powerupPrefab, GenerateSpawnPosition(), powerupPrefab.transform.rotation);
         }
     }
     private Vector3 GenerateSpawnPosition()

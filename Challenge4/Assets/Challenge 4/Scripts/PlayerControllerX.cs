@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿
+/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Challenge4
+ * Script that manages the player controls
+ */using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

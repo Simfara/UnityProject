@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿
+/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Challenge4
+ * Script that manges the spawning of the enemy and the powerup
+ */using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

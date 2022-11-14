@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿
+/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype4
+ * Script that manages the enemy to move towards the player
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

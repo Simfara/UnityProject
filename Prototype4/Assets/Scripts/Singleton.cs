@@ -1,7 +1,7 @@
 ﻿/*
  * CIS 350 
  * Simfara Ranjit
- * Assignment6
+ * Prototype4
  * Script that consits Singelton generic template
  */
 using System.Collections;

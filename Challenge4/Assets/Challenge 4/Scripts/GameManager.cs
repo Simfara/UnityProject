@@ -1,7 +1,7 @@
 ﻿/*
  * CIS 350 
  * Simfara Ranjit
- * Assignment6
+ * Challenge4
  * Script that manages the game Ui elements such as Main menu loading new scenes ,pause funciton etc.
  */
 using System.Collections;

@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype4
+ * Script that manages the enemy and powerup spawm
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

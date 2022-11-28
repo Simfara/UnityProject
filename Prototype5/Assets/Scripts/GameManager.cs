@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype5
+ * This script controls the game mechanics such as the gameover case and restart methods. 
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;

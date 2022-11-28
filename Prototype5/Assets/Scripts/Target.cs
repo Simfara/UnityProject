@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * CIS 350 
+ * Simfara Ranjit
+ * Prototype5
+ * This script controls the spawning of the food
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

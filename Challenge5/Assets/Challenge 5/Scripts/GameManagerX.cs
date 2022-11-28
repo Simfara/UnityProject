@@ -2,7 +2,7 @@
 /*
  * CIS 350 
  * Simfara Ranjit
- * Challenge3 
+ * Challenge5
  * This script controls the game mechanics such as spawning the food and fameover clauses.
  * 
  */

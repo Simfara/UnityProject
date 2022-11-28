@@ -1,7 +1,7 @@
 ﻿/*
  * CIS 350 
  * Simfara Ranjit
- * Challenge3 
+ * Challenge5
  * This script controls the difficulty of the game
  */
 using System.Collections;

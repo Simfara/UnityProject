@@ -1,7 +1,7 @@
 ﻿/*
  * CIS 350 
  * Simfara Ranjit
- * Challenge3 
+ * Challenge5
  * This script controls the targets
  */
 using System.Collections;

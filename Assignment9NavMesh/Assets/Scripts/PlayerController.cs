@@ -1,23 +1,30 @@
-﻿/*
+﻿
+/*
  * CIS 350 
  * Simfara Ranjit
  * Assignment9
- * Script TO MOVE THE PLAYER BY USING MOUSECLICK
+ * Script for the PLAYER TO MOVE AROUNF THE LEVEL.
  */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-public class MoveToClickPoint : MonoBehaviour
-{
+using UnityStandardAssets.Characters.ThirdPerson;
 
+public class PlayerController : MonoBehaviour
+{
     public Camera cam;
     public NavMeshAgent agent;
+    public ThirdPersonCharacter character;
+
     // Start is called before the first frame update
     void Start()
     {
+       
         cam = Camera.main;
         agent = GetComponent<NavMeshAgent>();
+        character = GetComponent<ThirdPersonCharacter>();
+        agent.updateRotation = false;
     }
 
     // Update is called once per frame
@@ -31,6 +38,16 @@ public class MoveToClickPoint : MonoBehaviour
             {
                 agent.destination = hit.point;
             }
+        }
+
+        if (agent.remainingDistance > agent.stoppingDistance)
+        {
+            character.Move(agent.desiredVelocity, false, false);
+
+        }
+        else
+        {
+            character.Move(Vector3.zero, false, false);
         }
     }
 }
